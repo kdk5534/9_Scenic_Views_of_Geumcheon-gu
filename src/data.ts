@@ -62,7 +62,7 @@ export const spots = [
     "name_en": "Geumcheon Sports Park Observatory",
     "name_zh": "金川体育公园观景台",
     "name_ja": "金川体育公園展望台",
-    "image": "/geumcheon_final.jpg",
+    "image": "/spot4.jpg",
     "original_image": "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202110/21/53b9a071-1e9b-439d-9c32-e0696c615555.jpg",
     "categories": ["자연·산책", "야경"],
     "recommendFor": ["친구", "혼자"],
