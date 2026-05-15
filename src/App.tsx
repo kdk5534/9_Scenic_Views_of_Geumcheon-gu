@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { 
   Menu, 
   Map as MapIcon, 
@@ -31,6 +31,13 @@ interface Recommendation {
   id: number;
   reason: string;
 }
+
+// --- Helpers ---
+const getLocalized = (obj: any, key: string, lang: Lang) => {
+  if (lang === 'ko') return obj[key];
+  const localizedKey = `${key}_${lang}`;
+  return obj[localizedKey] || obj[key];
+};
 
 // --- Translations ---
 const translations = {
@@ -238,6 +245,7 @@ const BottomNav = ({ active, setView, t }: { active: View, setView: (v: View) =>
       <button 
         key={item.id}
         onClick={() => setView(item.id as View)}
+        aria-label={item.label}
         className={`flex flex-col items-center justify-center px-4 py-1 transition-all duration-200 ${
           active === item.id ? 'bg-primary-container text-on-primary-container rounded-full scale-95 shadow-sm' : 'text-on-surface-variant hover:bg-surface-variant/30 rounded-lg'
         }`}
@@ -251,7 +259,7 @@ const BottomNav = ({ active, setView, t }: { active: View, setView: (v: View) =>
 
 const Header = ({ lang, setLang, t, onMenuClick }: { lang: Lang, setLang: (l: Lang) => void, t: any, onMenuClick?: () => void }) => (
   <header className="flex justify-between items-center w-full px-5 h-16 z-50 bg-background/95 backdrop-blur-sm sticky top-0 border-b border-outline-variant max-w-2xl mx-auto">
-    <button onClick={onMenuClick} className="text-primary p-1">
+    <button onClick={onMenuClick} className="text-primary p-1" aria-label="메뉴 열기">
       <Menu size={24} />
     </button>
     <h1 className="text-lg font-bold text-primary tracking-tight">{t.title}</h1>
@@ -328,19 +336,8 @@ function MapView({ spots, lang, handleSpotClick, t }: any) {
   }, [spots, lang]);
 
   return (
-    <div style={{ 
-      position: 'fixed',
-      top: '64px',
-      bottom: '64px',
-      left: 'max(0px, calc(50% - 336px))',
-      right: 'max(0px, calc(50% - 336px))',
-      width: 'auto',
-      maxWidth: '672px',
-      margin: '0 auto',
-      zIndex: 10,
-      background: '#f8f9fa'
-    }}>
-      <div ref={mapRef} style={{ width: '100%', height: '100%' }} />
+    <div className="fixed top-16 bottom-16 left-0 right-0 z-10 bg-[#f8f9fa] max-w-2xl mx-auto">
+      <div ref={mapRef} className="w-full h-full" />
     </div>
   );
 }
@@ -734,11 +731,11 @@ export default function App() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/20"></div>
                       <div className="absolute top-4 left-4 z-20 flex gap-2">
-                        <button onClick={() => setView('home')} className="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-black/40"><ArrowLeft size={20} /></button>
+                        <button onClick={() => setView('home')} className="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-black/40" aria-label="뒤로 가기"><ArrowLeft size={20} /></button>
                       </div>
                       <div className="absolute top-4 right-4 z-20 flex gap-2">
-                        <button className="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-black/40"><Share2 size={20} /></button>
-                        <button className="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-black/40"><Heart size={20} /></button>
+                        <button className="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-black/40" aria-label="공유하기"><Share2 size={20} /></button>
+                        <button className="w-10 h-10 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-black/40" aria-label="좋아요"><Heart size={20} /></button>
                       </div>
                     </div>
 
