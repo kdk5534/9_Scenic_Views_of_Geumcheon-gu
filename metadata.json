@@ -1,0 +1,6 @@
+{
+  "name": "금천 9경 가이드",
+  "description": "Geumcheon 9 Scenic Spots Guide with AI recommendations and multi-language support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
