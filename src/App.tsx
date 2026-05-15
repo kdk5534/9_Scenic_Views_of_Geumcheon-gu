@@ -101,6 +101,13 @@ const translations = {
     detailDuration: "Duration",
     detailHighlights: "Highlights",
     detailStory: "Story",
+    categories: {
+      "자연·산책": "Nature",
+      "역사·문화": "History",
+      "야경": "Night View",
+      "예술·공연": "Arts",
+      "체험·교육": "Experience"
+    }
   },
   zh: {
     title: "金川 9景指南",
@@ -135,6 +142,13 @@ const translations = {
     detailDuration: "所需时间",
     detailHighlights: "核心看点",
     detailStory: "故事",
+    categories: {
+      "자연·산책": "自然·散步",
+      "역사·문화": "历史·文化",
+      "야경": "夜景",
+      "예술·공연": "艺术·演出",
+      "체험·교육": "体验·教育"
+    }
   },
   ja: {
     title: "衿川 9景ガイド",
@@ -276,7 +290,7 @@ function MapView({ spots, lang, handleSpotClick, t }: any) {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
     spots.forEach((spot: any) => {
-      const name = lang === 'ko' ? spot.name : lang === 'en' ? spot.name_en : lang === 'zh' ? spot.name_zh : spot.name_ja;
+      const name = getLocalized(spot, 'name', lang);
       const icon = L.divIcon({
         className: '',
         html: `<div style="width:36px;height:36px;background:#012d1d;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:16px;border:3px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.5);">${spot.id}</div>`,
@@ -377,12 +391,6 @@ export default function App() {
     setView('detail');
   };
 
-  const getLocalizedName = (spot: any) => {
-    if (lang === 'en') return spot.name_en;
-    if (lang === 'zh') return spot.name_zh;
-    if (lang === 'ja') return spot.name_ja;
-    return spot.name;
-  };
 
   const handleRecommend = () => {
     if (!who || !time || prefs.length === 0) {
@@ -432,7 +440,7 @@ export default function App() {
           translations[lang].whoItems[whoValues.indexOf(who)],
           translations[lang].timeItems[timeValues.indexOf(time)],
           prefs.map(p => translations[lang].prefItems[prefValues.indexOf(p)]),
-          getLocalizedName(s)
+          getLocalized(s, 'name', lang)
         )
       }));
 
@@ -484,7 +492,7 @@ export default function App() {
                     <div className="relative aspect-[4/5] overflow-hidden">
                       <ScenicImage 
                         src={spot.image} 
-                        alt={spot.name} 
+                        alt={getLocalized(spot, 'name', lang)} 
                         categories={spot.categories} 
                         fallbackSrc={(spot as any).original_image}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
@@ -494,7 +502,7 @@ export default function App() {
                       </div>
                     </div>
                     <div className="p-3">
-                      <h3 className="text-sm font-semibold text-on-surface truncate">{getLocalizedName(spot)}</h3>
+                      <h3 className="text-sm font-semibold text-on-surface truncate">{getLocalized(spot, 'name', lang)}</h3>
                     </div>
                   </article>
                 ))}
@@ -611,17 +619,17 @@ export default function App() {
                         <div className="h-48 overflow-hidden">
                           <ScenicImage 
                             src={spot.image} 
-                            alt={spot.name} 
+                            alt={getLocalized(spot, 'name', lang)} 
                             categories={spot.categories} 
                             fallbackSrc={(spot as any).original_image}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                           />
                         </div>
                         <div className="p-6">
-                          <div className="flex items-center gap-2 mb-3">
-                            <span className="bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">{spot.id}경</span>
-                            <h3 className="text-xl font-bold text-primary">{getLocalizedName(spot)}</h3>
-                          </div>
+                            <div className="flex items-center gap-2 mb-3">
+                              <span className="bg-primary text-white text-[10px] font-bold px-1.5 py-0.5 rounded uppercase">{spot.id}경</span>
+                              <h3 className="text-xl font-bold text-primary">{getLocalized(spot, 'name', lang)}</h3>
+                            </div>
                           <p className="text-on-surface-variant text-sm leading-relaxed mb-4">{rec.reason}</p>
                           <button 
                             onClick={() => handleSpotClick(spot.id)}
@@ -677,7 +685,7 @@ export default function App() {
                     <div className="w-24 h-24 rounded-xl overflow-hidden border border-surface-variant relative shadow-sm">
                       <ScenicImage 
                         src={spot.image} 
-                        alt={spot.name} 
+                        alt={getLocalized(spot, 'name', lang)} 
                         categories={spot.categories} 
                         fallbackSrc={(spot as any).original_image}
                         className="w-full h-full object-cover" 
@@ -687,12 +695,13 @@ export default function App() {
                     <div className="flex-grow">
                       <div className="flex items-baseline gap-2 mb-1">
                         <span className="text-xs font-bold text-secondary">{spot.id}경</span>
-                        <h3 className="text-lg font-bold text-primary">{getLocalizedName(spot)}</h3>
+                        <h3 className="text-lg font-bold text-primary">{getLocalized(spot, 'name', lang)}</h3>
                       </div>
                       <div className="flex gap-1.5 overflow-x-auto no-scrollbar">
-                        {spot.categories.map(c => (
-                          <span key={c} className="text-[10px] px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded font-medium">#{c}</span>
-                        ))}
+                        {spot.categories.map(c => {
+                          const localizedCat = lang === 'ko' ? c : (translations[lang] as any).categories?.[c] || c;
+                          return <span key={c} className="text-[10px] px-2 py-0.5 bg-surface-container-high text-on-surface-variant rounded font-medium">#{localizedCat}</span>;
+                        })}
                       </div>
                     </div>
                     <ChevronRight className="text-outline-variant group-hover:text-primary transition-colors" />
@@ -718,7 +727,7 @@ export default function App() {
                     <div className="relative h-[400px]">
                       <ScenicImage 
                         src={spot.image} 
-                        alt={spot.name} 
+                        alt={getLocalized(spot, 'name', lang)} 
                         categories={spot.categories} 
                         fallbackSrc={(spot as any).original_image}
                         className="w-full h-full object-cover shadow-2xl" 
@@ -735,9 +744,12 @@ export default function App() {
 
                     <div className="relative -mt-12 bg-background rounded-t-[40px] pt-10 px-5 flex flex-col gap-10">
                       <section>
-                        <h2 className="text-4xl font-bold text-primary leading-tight">{spot.id}. {getLocalizedName(spot)}</h2>
+                        <h2 className="text-4xl font-bold text-primary leading-tight">{spot.id}. {getLocalized(spot, 'name', lang)}</h2>
                         <div className="flex flex-wrap gap-2 mt-4">
-                          {spot.categories.map(c => <span key={c} className="px-4 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-semibold">#{c}</span>)}
+                          {spot.categories.map(c => {
+                            const localizedCat = lang === 'ko' ? c : (translations[lang] as any).categories?.[c] || c;
+                            return <span key={c} className="px-4 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container text-xs font-semibold">#{localizedCat}</span>;
+                          })}
                         </div>
                       </section>
 
@@ -748,7 +760,7 @@ export default function App() {
                           </div>
                           <div>
                             <p className="text-xs text-outline mb-1 font-bold">{t.detailAddress}</p>
-                            <p className="text-sm font-medium">{spot.address}</p>
+                            <p className="text-sm font-medium">{getLocalized(spot, 'address', lang)}</p>
                           </div>
                         </div>
                         <div className="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/40 flex flex-col gap-3">
@@ -757,7 +769,7 @@ export default function App() {
                           </div>
                           <div>
                             <p className="text-xs text-outline font-bold">{t.detailHours}</p>
-                            <p className="text-xs font-medium mt-1">{spot.hours}</p>
+                            <p className="text-xs font-medium mt-1">{getLocalized(spot, 'hours', lang)}</p>
                           </div>
                         </div>
                         <div className="bg-surface-container-low p-4 rounded-2xl border border-outline-variant/40 flex flex-col gap-3">
@@ -766,7 +778,7 @@ export default function App() {
                           </div>
                           <div>
                             <p className="text-xs text-outline font-bold">{t.detailFee}</p>
-                            <p className="text-xs font-medium mt-1">{spot.fee}</p>
+                            <p className="text-xs font-medium mt-1">{getLocalized(spot, 'fee', lang)}</p>
                           </div>
                         </div>
                         <div className="col-span-2 bg-surface-container-low p-5 rounded-2xl border border-outline-variant/40 flex items-start gap-4">
@@ -775,7 +787,7 @@ export default function App() {
                           </div>
                           <div>
                             <p className="text-xs text-outline mb-1 font-bold">{t.detailTransit}</p>
-                            <p className="text-sm font-medium">{spot.transit}</p>
+                            <p className="text-sm font-medium">{getLocalized(spot, 'transit', lang)}</p>
                           </div>
                         </div>
                         <div className="col-span-2 bg-surface-container-low p-5 rounded-2xl border border-outline-variant/40 flex items-start gap-4">
@@ -784,7 +796,7 @@ export default function App() {
                           </div>
                           <div>
                             <p className="text-xs text-outline mb-1 font-bold">{t.detailDuration}</p>
-                            <p className="text-sm font-medium">{spot.duration}</p>
+                            <p className="text-sm font-medium">{getLocalized(spot, 'duration', lang)}</p>
                           </div>
                         </div>
                       </section>
@@ -793,8 +805,8 @@ export default function App() {
                         <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
                         <h3 className="text-xl font-bold mb-5 flex items-center gap-2"><Sparkles size={20} className="text-yellow-400" /> {t.detailHighlights}</h3>
                         <ul className="space-y-4">
-                          {spot.highlights.map(h => (
-                            <li key={h} className="flex items-start gap-3">
+                          {(getLocalized(spot, 'highlights', lang) as string[]).map((h, i) => (
+                            <li key={i} className="flex items-start gap-3">
                               <CheckCircle2 size={16} className="text-secondary-container mt-1 shrink-0" />
                               <span className="text-sm font-medium opacity-90">{h}</span>
                             </li>
@@ -806,7 +818,7 @@ export default function App() {
                         <h3 className="text-xl font-bold text-primary mb-4">{t.detailStory}</h3>
                         <div className="relative p-6 pt-10">
                           <Quote className="absolute top-0 left-0 text-surface-variant scale-[3] opacity-50 -translate-x-2 translate-y-2" />
-                          <p className="text-on-surface-variant font-medium leading-relaxed italic">{spot.story}</p>
+                          <p className="text-on-surface-variant font-medium leading-relaxed italic">{getLocalized(spot, 'story', lang)}</p>
                         </div>
                       </section>
                     </div>
@@ -823,7 +835,6 @@ export default function App() {
                 lang={lang} 
                 handleSpotClick={handleSpotClick} 
                 t={t} 
-                getLocalizedName={getLocalizedName} 
               />
             </div>
           )}
