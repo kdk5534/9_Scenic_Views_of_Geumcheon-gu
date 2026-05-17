@@ -59,8 +59,8 @@ export default function PoiList({ spotId, spotLat, spotLng, lang }: Props) {
     : lang === 'zh' ? (p.name_zh ?? p.name)
     : (p.name_ja ?? p.name);
 
-  const googleUrl = (p: PoiItem) =>
-    `https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lng}`;
+  const kakaoMapUrl = (p: PoiItem) =>
+    `https://map.kakao.com/link/map/${encodeURIComponent(p.name)},${p.lat},${p.lng}`;
 
   return (
     <section className="mb-10">
@@ -81,7 +81,7 @@ export default function PoiList({ spotId, spotLat, spotLng, lang }: Props) {
                 </p>
               </div>
               <a
-                href={p.kakaoUrl ?? googleUrl(p)}
+                href={p.kakaoUrl ?? kakaoMapUrl(p)}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${getName(p)} 지도로 보기`}

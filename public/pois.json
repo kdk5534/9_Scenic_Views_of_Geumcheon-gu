@@ -2,8 +2,7 @@
   "1": [
     { "name": "호압사 주차장", "name_en": "Hoabsa Temple Parking", "name_zh": "虎压寺停车场", "name_ja": "ホアプサ駐車場", "type": "parking", "lat": 37.452200, "lng": 126.925100 },
     { "name": "바라밀공원 화장실", "name_en": "Baramil Park Restroom", "name_zh": "波罗蜜公园厕所", "name_ja": "パラミル公園トイレ", "type": "restroom", "lat": 37.451800, "lng": 126.924800 },
-    { "name": "호암산 약수터 편의점", "name_en": "Hoamsan Convenience Store", "name_zh": "虎岩山便利店", "name_ja": "虎岩山コンビニ", "type": "convenience", "lat": 37.453000, "lng": 126.926000 },
-    { "name": "금천구청 버스정류장", "name_en": "Geumcheon-gu Office Bus Stop", "name_zh": "衿川区厅公交站", "name_ja": "衿川区庁バス停", "type": "transport", "lat": 37.456900, "lng": 126.895200 }
+    { "name": "호압사 입구 버스정류장 (금천01)", "name_en": "Hoabsa Entrance Bus Stop (Geumcheon 01)", "name_zh": "虎压寺入口公交站 (衿川01)", "name_ja": "ホアプサ入口バス停 (衿川01)", "type": "transport", "lat": 37.452800, "lng": 126.924500 }
   ],
   "2": [
     { "name": "금천구청역 GS25", "name_en": "GS25 Geumcheon-gu Office Stn", "name_zh": "GS25 衿川区厅站店", "name_ja": "GS25 衿川区庁駅店", "type": "convenience", "lat": 37.456700, "lng": 126.895500 },
@@ -42,7 +41,7 @@
   "8": [
     { "name": "금천뮤지컬센터 주차장", "name_en": "Musical Center Parking", "name_zh": "音乐剧中心停车场", "name_ja": "ミュージカルセンター駐車場", "type": "parking", "lat": 37.469100, "lng": 126.893600 },
     { "name": "독산역 인근 카페", "name_en": "Café near Doksan Station", "name_zh": "秃山站附近咖啡厅", "name_ja": "禿山駅近くのカフェ", "type": "cafe", "lat": 37.469500, "lng": 126.894000 },
-    { "name": "독산역 GS25", "name_en": "GS25 Doksan Station", "name_zh": "GS25 秃山站店", "name_ja": "GS25 禿山駅店", "type": "convenience", "lat": 37.472000, "lng": 126.901000 },
+    { "name": "시흥대로 GS25 (뮤지컬센터 인근)", "name_en": "GS25 near Musical Center", "name_zh": "GS25 音乐剧中心附近", "name_ja": "GS25 ミュージカルセンター近く", "type": "convenience", "lat": 37.469400, "lng": 126.893200 },
     { "name": "독산역 1호선", "name_en": "Doksan Station (Line 1)", "name_zh": "秃山站 1号线", "name_ja": "禿山駅 1号線", "type": "transport", "lat": 37.472300, "lng": 126.901400 }
   ],
   "9": [
