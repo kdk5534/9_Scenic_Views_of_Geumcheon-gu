@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e ' *)",
+      "Bash(Get-ChildItem \"C:\\\\Users\\\\Kwon dong geun\\\\9_Scenic_Views_of_Geumcheon-gu\\\\public\")",
+      "Bash(Select-Object Name)"
+    ]
+  }
+}

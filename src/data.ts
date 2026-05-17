@@ -1,4 +1,6 @@
-export const spots = [
+import { Spot } from './types';
+
+export const spots: Spot[] = [
   {
     "id": 1,
     "name": "호암산과 호압사",

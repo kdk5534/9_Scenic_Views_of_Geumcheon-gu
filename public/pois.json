@@ -1,0 +1,54 @@
+{
+  "1": [
+    { "name": "호압사 주차장", "name_en": "Hoabsa Temple Parking", "name_zh": "虎压寺停车场", "name_ja": "ホアプサ駐車場", "type": "parking", "lat": 37.452200, "lng": 126.925100 },
+    { "name": "바라밀공원 화장실", "name_en": "Baramil Park Restroom", "name_zh": "波罗蜜公园厕所", "name_ja": "パラミル公園トイレ", "type": "restroom", "lat": 37.451800, "lng": 126.924800 },
+    { "name": "호암산 약수터 편의점", "name_en": "Hoamsan Convenience Store", "name_zh": "虎岩山便利店", "name_ja": "虎岩山コンビニ", "type": "convenience", "lat": 37.453000, "lng": 126.926000 },
+    { "name": "금천구청 버스정류장", "name_en": "Geumcheon-gu Office Bus Stop", "name_zh": "衿川区厅公交站", "name_ja": "衿川区庁バス停", "type": "transport", "lat": 37.456900, "lng": 126.895200 }
+  ],
+  "2": [
+    { "name": "금천구청역 GS25", "name_en": "GS25 Geumcheon-gu Office Stn", "name_zh": "GS25 衿川区厅站店", "name_ja": "GS25 衿川区庁駅店", "type": "convenience", "lat": 37.456700, "lng": 126.895500 },
+    { "name": "안양천 카페 (뚝방길)", "name_en": "Anyangcheon Riverside Café", "name_zh": "安养川河边咖啡厅", "name_ja": "安養川沿いカフェ", "type": "cafe", "lat": 37.455500, "lng": 126.892700 },
+    { "name": "벚꽃길 공중화장실", "name_en": "Cherry Trail Public Restroom", "name_zh": "樱花路公厕", "name_ja": "桜並木道 公衆トイレ", "type": "restroom", "lat": 37.457000, "lng": 126.893500 },
+    { "name": "금천구청역 1호선", "name_en": "Geumcheon-gu Office Station (Line 1)", "name_zh": "衿川区厅站 1号线", "name_ja": "衿川区庁駅 1号線", "type": "transport", "lat": 37.457200, "lng": 126.895000 }
+  ],
+  "3": [
+    { "name": "시흥계곡 주차장", "name_en": "Siheung Valley Parking", "name_zh": "始兴溪谷停车场", "name_ja": "始興渓谷駐車場", "type": "parking", "lat": 37.446500, "lng": 126.909400 },
+    { "name": "오미생태공원 화장실", "name_en": "Omi Park Restroom", "name_zh": "五味公园厕所", "name_ja": "五味公園トイレ", "type": "restroom", "lat": 37.446200, "lng": 126.909900 },
+    { "name": "호암산 입구 편의점", "name_en": "Hoamsan Entrance Convenience", "name_zh": "虎岩山入口便利店", "name_ja": "虎岩山入口コンビニ", "type": "convenience", "lat": 37.447000, "lng": 126.910500 }
+  ],
+  "4": [
+    { "name": "독산동 공영주차장", "name_en": "Doksan-dong Public Parking", "name_zh": "秃山洞公共停车场", "name_ja": "禿山洞 公共駐車場", "type": "parking", "lat": 37.468200, "lng": 126.908800 },
+    { "name": "금천체육공원 화장실", "name_en": "Sports Park Restroom", "name_zh": "体育公园厕所", "name_ja": "体育公園トイレ", "type": "restroom", "lat": 37.468600, "lng": 126.908200 },
+    { "name": "독산동 카페거리", "name_en": "Doksan-dong Café Street", "name_zh": "秃山洞咖啡街", "name_ja": "禿山洞カフェ通り", "type": "cafe", "lat": 37.469000, "lng": 126.907500 },
+    { "name": "독산역 1호선", "name_en": "Doksan Station (Line 1)", "name_zh": "秃山站 1号线", "name_ja": "禿山駅 1号線", "type": "transport", "lat": 37.472300, "lng": 126.901400 }
+  ],
+  "5": [
+    { "name": "가산디지털단지역 GS25", "name_en": "GS25 Gasan Stn", "name_zh": "GS25 加山站店", "name_ja": "GS25 加山駅店", "type": "convenience", "lat": 37.481900, "lng": 126.882900 },
+    { "name": "가산동 샤로수길 카페", "name_en": "Gasan Café Street", "name_zh": "加山洞咖啡街", "name_ja": "加山洞カフェ通り", "type": "cafe", "lat": 37.482500, "lng": 126.883200 },
+    { "name": "가산디지털단지역 1·7호선", "name_en": "Gasan Digital Complex Stn (Line 1·7)", "name_zh": "加山数码团地站 1·7号线", "name_ja": "加山デジタル団地駅 1・7号線", "type": "transport", "lat": 37.481800, "lng": 126.882400 },
+    { "name": "순이의집 인근 식당가", "name_en": "Restaurant Row near Sooni's House", "name_zh": "顺伊之家附近餐厅街", "name_ja": "スニの家近くの飲食店街", "type": "restaurant", "lat": 37.483000, "lng": 126.884000 }
+  ],
+  "6": [
+    { "name": "시흥행궁 인근 주차장", "name_en": "Siheung Haenggung Parking", "name_zh": "始兴行宫附近停车场", "name_ja": "始興行宮 近隣駐車場", "type": "parking", "lat": 37.451000, "lng": 126.907800 },
+    { "name": "금하로 카페", "name_en": "Geumha-ro Café", "name_zh": "衿河路咖啡厅", "name_ja": "衿河路カフェ", "type": "cafe", "lat": 37.451500, "lng": 126.908500 },
+    { "name": "시흥동 편의점", "name_en": "Siheung-dong Convenience Store", "name_zh": "始兴洞便利店", "name_ja": "始興洞コンビニ", "type": "convenience", "lat": 37.450800, "lng": 126.908100 }
+  ],
+  "7": [
+    { "name": "금천폭포공원 주차장", "name_en": "Waterfall Park Parking", "name_zh": "瀑布公园停车场", "name_ja": "滝公園駐車場", "type": "parking", "lat": 37.446900, "lng": 126.903800 },
+    { "name": "금천폭포공원 화장실", "name_en": "Waterfall Park Restroom", "name_zh": "瀑布公园厕所", "name_ja": "滝公園トイレ", "type": "restroom", "lat": 37.446700, "lng": 126.904200 },
+    { "name": "시흥대로 버스정류장", "name_en": "Siheung-daero Bus Stop", "name_zh": "始兴大路公交站", "name_ja": "始興大路バス停", "type": "transport", "lat": 37.447200, "lng": 126.904600 },
+    { "name": "인근 분식집", "name_en": "Nearby Korean Snack Restaurant", "name_zh": "附近韩式小吃店", "name_ja": "近くのフンシク店", "type": "restaurant", "lat": 37.447500, "lng": 126.905000 }
+  ],
+  "8": [
+    { "name": "금천뮤지컬센터 주차장", "name_en": "Musical Center Parking", "name_zh": "音乐剧中心停车场", "name_ja": "ミュージカルセンター駐車場", "type": "parking", "lat": 37.469100, "lng": 126.893600 },
+    { "name": "독산역 인근 카페", "name_en": "Café near Doksan Station", "name_zh": "秃山站附近咖啡厅", "name_ja": "禿山駅近くのカフェ", "type": "cafe", "lat": 37.469500, "lng": 126.894000 },
+    { "name": "독산역 GS25", "name_en": "GS25 Doksan Station", "name_zh": "GS25 秃山站店", "name_ja": "GS25 禿山駅店", "type": "convenience", "lat": 37.472000, "lng": 126.901000 },
+    { "name": "독산역 1호선", "name_en": "Doksan Station (Line 1)", "name_zh": "秃山站 1号线", "name_ja": "禿山駅 1号線", "type": "transport", "lat": 37.472300, "lng": 126.901400 }
+  ],
+  "9": [
+    { "name": "금나래중앙공원 주차장", "name_en": "Geumnarae Park Parking", "name_zh": "金娜莱中央公园停车场", "name_ja": "クムナレ中央公園駐車場", "type": "parking", "lat": 37.457600, "lng": 126.895400 },
+    { "name": "서서울미술관 카페", "name_en": "SeMA West Café", "name_zh": "西首尔美术馆咖啡厅", "name_ja": "西ソウル美術館カフェ", "type": "cafe", "lat": 37.457900, "lng": 126.895700 },
+    { "name": "금천구청역 GS25", "name_en": "GS25 Geumcheon-gu Office Stn", "name_zh": "GS25 衿川区厅站店", "name_ja": "GS25 衿川区庁駅店", "type": "convenience", "lat": 37.456700, "lng": 126.895500 },
+    { "name": "금천구청역 1호선", "name_en": "Geumcheon-gu Office Station (Line 1)", "name_zh": "衿川区厅站 1号线", "name_ja": "衿川区庁駅 1号線", "type": "transport", "lat": 37.457200, "lng": 126.895000 }
+  ]
+}

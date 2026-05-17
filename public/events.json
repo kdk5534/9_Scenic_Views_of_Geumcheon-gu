@@ -1,0 +1,38 @@
+[
+  {
+    "id": "2026-cherry",
+    "title": "안양천 벚꽃축제",
+    "title_en": "Anyangcheon Cherry Blossom Festival",
+    "title_zh": "安养川樱花节",
+    "title_ja": "安養川桜まつり",
+    "startDate": "2026-03-25",
+    "endDate": "2026-04-15",
+    "spotId": 2,
+    "emoji": "🌸",
+    "url": null
+  },
+  {
+    "id": "2026-sema-open",
+    "title": "서서울미술관 개관 기념 특별전",
+    "title_en": "West Seoul Museum of Art Opening Exhibition",
+    "title_zh": "西首尔美术馆开馆纪念特别展",
+    "title_ja": "西ソウル美術館開館記念特別展",
+    "startDate": "2026-03-12",
+    "endDate": "2026-08-31",
+    "spotId": 9,
+    "emoji": "🎨",
+    "url": null
+  },
+  {
+    "id": "2026-ginkgo",
+    "title": "시흥행궁 은행나무 단풍",
+    "title_en": "Siheung Haenggung Ginkgo Fall Colors",
+    "title_zh": "始兴行宫银杏秋叶",
+    "title_ja": "始興行宮 銀杏紅葉",
+    "startDate": "2026-10-25",
+    "endDate": "2026-11-20",
+    "spotId": 6,
+    "emoji": "🍂",
+    "url": null
+  }
+]

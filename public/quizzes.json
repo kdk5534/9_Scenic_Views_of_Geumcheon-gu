@@ -1,0 +1,344 @@
+[
+  {
+    "spotId": 1,
+    "questions": [
+      {
+        "q": "호압사를 창건한 조선의 왕은?",
+        "q_en": "Which Joseon king founded Hoabsa Temple?",
+        "q_zh": "创建虎压寺的朝鲜王是谁？",
+        "q_ja": "ホアプサを創建した朝鮮の王は？",
+        "options": ["정조", "태조", "세종"],
+        "options_en": ["King Jeongjo", "King Taejo", "King Sejong"],
+        "options_zh": ["正祖", "太祖", "世宗"],
+        "options_ja": ["正祖", "太祖", "世宗"],
+        "answer": 1
+      },
+      {
+        "q": "호암산성은 어떤 수준의 문화유산으로 지정됐나요?",
+        "q_en": "At what level is Hoamsanseong Fortress designated as a cultural heritage?",
+        "q_zh": "虎岩山城被指定为哪级文化遗产？",
+        "q_ja": "虎岩山城は何レベルの文化遺産に指定されていますか？",
+        "options": ["국가지정", "서울시 지정", "금천구 지정"],
+        "options_en": ["National", "Seoul City", "Geumcheon-gu"],
+        "options_zh": ["国家级", "首尔市级", "衿川区级"],
+        "options_ja": ["国家指定", "ソウル市指定", "衿川区指定"],
+        "answer": 0
+      },
+      {
+        "q": "바라밀공원은 어떤 성격의 공간인가요?",
+        "q_en": "What kind of space is Baramil Park?",
+        "q_zh": "波罗蜜公园是什么性质的空间？",
+        "q_ja": "パラミル公園はどんな性格の空間ですか？",
+        "options": ["사찰림 산림여가공간", "도시형 체육공원", "생태학습 탐방로"],
+        "options_en": ["Temple Forest Recreation Area", "Urban Sports Park", "Ecology Learning Trail"],
+        "options_zh": ["寺庙林森林休闲空间", "城市体育公园", "生态学习探访路"],
+        "options_ja": ["寺院林 森林レジャー空間", "都市型体育公園", "生態学習探訪路"],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "spotId": 2,
+    "questions": [
+      {
+        "q": "안양천 벚꽃십리길의 총 길이는?",
+        "q_en": "What is the total length of the Anyangcheon Cherry Blossom Trail?",
+        "q_zh": "安养川樱花十里路的总长度是多少？",
+        "q_ja": "安養川桜十里道の全長は？",
+        "options": ["2km", "4km", "6km"],
+        "options_en": ["2km", "4km", "6km"],
+        "options_zh": ["2公里", "4公里", "6公里"],
+        "options_ja": ["2km", "4km", "6km"],
+        "answer": 1
+      },
+      {
+        "q": "벚꽃십리길이 잇는 두 지하철역은?",
+        "q_en": "Which two subway stations does the Cherry Blossom Trail connect?",
+        "q_zh": "樱花十里路连接哪两个地铁站？",
+        "q_ja": "桜十里道が結ぶ2つの駅は？",
+        "options": ["구로역 ↔ 가산역", "금천구청역 ↔ 가산디지털단지역", "독산역 ↔ 석수역"],
+        "options_en": ["Guro ↔ Gasan", "Geumcheon-gu Office ↔ Gasan Digital Complex", "Doksan ↔ Seoksu"],
+        "options_zh": ["九老站 ↔ 加山站", "衿川区厅站 ↔ 加山数码团地站", "秃山站 ↔ 石水站"],
+        "options_ja": ["九老駅 ↔ 加山駅", "衿川区庁駅 ↔ 加山デジタル団地駅", "禿山駅 ↔ 石水駅"],
+        "answer": 1
+      },
+      {
+        "q": "안양천에서 초여름에 특히 아름다운 정원은?",
+        "q_en": "Which garden at Anyangcheon is especially beautiful in early summer?",
+        "q_zh": "安养川初夏特别美丽的花园是哪个？",
+        "q_ja": "安養川で初夏に特に美しい庭園は？",
+        "options": ["수국정원", "장미원", "억새밭"],
+        "options_en": ["Hydrangea Garden", "Rose Garden", "Silver Grass Field"],
+        "options_zh": ["绣球花园", "玫瑰园", "芒草地"],
+        "options_ja": ["アジサイ庭園", "バラ園", "ススキ野原"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "spotId": 3,
+    "questions": [
+      {
+        "q": "오미생태공원은 어느 산 자락에 위치하나요?",
+        "q_en": "At the foot of which mountain is Omi Ecological Park located?",
+        "q_zh": "五味生态公园位于哪座山的山脚？",
+        "q_ja": "五味生態公園はどの山のふもとにありますか？",
+        "options": ["관악산", "삼성산", "호암산"],
+        "options_en": ["Gwanaksan", "Samseongsan", "Hoamsan"],
+        "options_zh": ["冠岳山", "三圣山", "虎岩山"],
+        "options_ja": ["冠岳山", "三聖山", "虎岩山"],
+        "answer": 2
+      },
+      {
+        "q": "오미생태공원의 테마 정원은 몇 개인가요?",
+        "q_en": "How many themed gardens does Omi Ecological Park have?",
+        "q_zh": "五味生态公园有几个主题花园？",
+        "q_ja": "五味生態公園のテーマガーデンはいくつありますか？",
+        "options": ["3개", "5개", "7개"],
+        "options_en": ["3", "5", "7"],
+        "options_zh": ["3个", "5个", "7个"],
+        "options_ja": ["3つ", "5つ", "7つ"],
+        "answer": 1
+      },
+      {
+        "q": "오미생태공원 인근 계곡의 이름은?",
+        "q_en": "What is the name of the valley near Omi Ecological Park?",
+        "q_zh": "五味生态公园附近的溪谷叫什么名字？",
+        "q_ja": "五味生態公園近くの渓谷の名前は？",
+        "options": ["청계계곡", "시흥계곡", "도림계곡"],
+        "options_en": ["Cheonggye Valley", "Siheung Valley", "Dorim Valley"],
+        "options_zh": ["清溪溪谷", "始兴溪谷", "道林溪谷"],
+        "options_ja": ["清渓渓谷", "始興渓谷", "道林渓谷"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "spotId": 4,
+    "questions": [
+      {
+        "q": "금천체육공원 전망대의 산책길 주제는?",
+        "q_en": "What is the theme of the trail at Geumcheon Sports Park Observatory?",
+        "q_zh": "金川体育公园观景台散步道的主题是什么？",
+        "q_ja": "金川体育公園展望台の散策路のテーマは？",
+        "options": ["스포츠", "음악", "미술"],
+        "options_en": ["Sports", "Music", "Art"],
+        "options_zh": ["体育", "音乐", "美术"],
+        "options_ja": ["スポーツ", "音楽", "美術"],
+        "answer": 1
+      },
+      {
+        "q": "금천체육공원 전망대가 위치한 동(洞)은?",
+        "q_en": "In which dong (neighborhood) is Geumcheon Sports Park located?",
+        "q_zh": "金川体育公园位于哪个洞？",
+        "q_ja": "金川体育公園展望台があるのは何洞ですか？",
+        "options": ["시흥동", "가산동", "독산동"],
+        "options_en": ["Siheung-dong", "Gasan-dong", "Doksan-dong"],
+        "options_zh": ["始兴洞", "加山洞", "秃山洞"],
+        "options_ja": ["始興洞", "加山洞", "禿山洞"],
+        "answer": 2
+      },
+      {
+        "q": "전망대에서 야경을 언제 볼 수 있나요?",
+        "q_en": "When can you see the night view from the observatory?",
+        "q_zh": "什么时候可以在观景台欣赏夜景？",
+        "q_ja": "展望台から夜景はいつ見られますか？",
+        "options": ["일출~일몰", "오전 10시~오후 6시", "24시간"],
+        "options_en": ["Sunrise to Sunset", "10am to 6pm", "24 hours"],
+        "options_zh": ["日出至日落", "上午10时至下午6时", "24小时"],
+        "options_ja": ["日の出〜日没", "午前10時〜午後6時", "24時間"],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "spotId": 5,
+    "questions": [
+      {
+        "q": "순이의 집은 어느 시대 여성 노동자의 삶을 재현하나요?",
+        "q_en": "Which era's female workers' lives does Sooni's House recreate?",
+        "q_zh": "顺伊之家重现了哪个时代女工的生活？",
+        "q_ja": "スニの家はどの時代の女性労働者の生活を再現しますか？",
+        "options": ["1940~50년대", "1960~90년대", "2000년대"],
+        "options_en": ["1940s–50s", "1960s–90s", "2000s"],
+        "options_zh": ["1940~50年代", "1960~90年代", "2000年代"],
+        "options_ja": ["1940〜50年代", "1960〜90年代", "2000年代"],
+        "answer": 1
+      },
+      {
+        "q": "순이의 집이 서울미래유산으로 지정된 해는?",
+        "q_en": "In what year was Sooni's House designated as Seoul Future Heritage?",
+        "q_zh": "顺伊之家哪年被指定为首尔未来遗产？",
+        "q_ja": "スニの家がソウル未来遺産に指定された年は？",
+        "options": ["2012년", "2014년", "2016년"],
+        "options_en": ["2012", "2014", "2016"],
+        "options_zh": ["2012年", "2014年", "2016年"],
+        "options_ja": ["2012年", "2014年", "2016年"],
+        "answer": 1
+      },
+      {
+        "q": "순이의 집 내 쪽방체험관의 테마방은 몇 개인가요?",
+        "q_en": "How many themed rooms are in the tiny room experience hall at Sooni's House?",
+        "q_zh": "顺伊之家小房体验馆有几个主题房？",
+        "q_ja": "スニの家のチョッパン体験館のテーマ部屋はいくつですか？",
+        "options": ["4개", "6개", "8개"],
+        "options_en": ["4", "6", "8"],
+        "options_zh": ["4个", "6个", "8个"],
+        "options_ja": ["4つ", "6つ", "8つ"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "spotId": 6,
+    "questions": [
+      {
+        "q": "1795년 시흥행궁에 유숙한 왕은?",
+        "q_en": "Which king lodged at Siheung Haenggung in 1795?",
+        "q_zh": "1795年在始兴行宫宿营的王是谁？",
+        "q_ja": "1795年に始興行宮に宿泊した王は？",
+        "options": ["영조", "정조", "순조"],
+        "options_en": ["King Yeongjo", "King Jeongjo", "King Sunjo"],
+        "options_zh": ["英祖", "正祖", "纯祖"],
+        "options_ja": ["英祖", "正祖", "純祖"],
+        "answer": 1
+      },
+      {
+        "q": "시흥행궁 앞 은행나무의 수령은?",
+        "q_en": "How old are the ginkgo trees in front of Siheung Haenggung?",
+        "q_zh": "始兴行宫前银杏树的树龄是多少？",
+        "q_ja": "始興行宮前の銀杏の木の樹齢は？",
+        "options": ["약 386년", "약 586년", "약 886년"],
+        "options_en": ["About 386 years", "About 586 years", "About 886 years"],
+        "options_zh": ["约386年", "约586年", "约886年"],
+        "options_ja": ["約386年", "約586年", "約886年"],
+        "answer": 2
+      },
+      {
+        "q": "시흥행궁전시관은 건물 몇 층에 위치하나요?",
+        "q_en": "On which floor is the Siheung Haenggung Exhibition Hall located?",
+        "q_zh": "始兴行宫展示馆位于建筑几层？",
+        "q_ja": "始興行宮展示館は建物の何階にありますか？",
+        "options": ["3층", "5층", "6층"],
+        "options_en": ["3rd floor", "5th floor", "6th floor"],
+        "options_zh": ["3楼", "5楼", "6楼"],
+        "options_ja": ["3階", "5階", "6階"],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "spotId": 7,
+    "questions": [
+      {
+        "q": "금천폭포공원의 폭포는 무엇을 형상화했나요?",
+        "q_en": "What does the waterfall at Geumcheon Waterfall Park represent?",
+        "q_zh": "金川瀑布公园的瀑布以什么为原型？",
+        "q_ja": "金川滝公園の滝は何を形象化しましたか？",
+        "options": ["호압사", "칼바위", "삼성산"],
+        "options_en": ["Hoabsa Temple", "Kalbawi Rock", "Samseongsan"],
+        "options_zh": ["虎压寺", "刀岩", "三圣山"],
+        "options_ja": ["ホアプサ", "カルバウィ", "三聖山"],
+        "answer": 1
+      },
+      {
+        "q": "금천폭포공원의 물줄기는 몇 개인가요?",
+        "q_en": "How many streams does Geumcheon Waterfall Park have?",
+        "q_zh": "金川瀑布公园有几条水流？",
+        "q_ja": "金川滝公園の水流はいくつですか？",
+        "options": ["2개", "3개", "5개"],
+        "options_en": ["2", "3", "5"],
+        "options_zh": ["2条", "3条", "5条"],
+        "options_ja": ["2つ", "3つ", "5つ"],
+        "answer": 1
+      },
+      {
+        "q": "3개의 물줄기가 상징하는 금천구의 3개 동은?",
+        "q_en": "Which three neighborhoods of Geumcheon-gu do the 3 streams symbolize?",
+        "q_zh": "3条水流象征衿川区的哪三个洞？",
+        "q_ja": "3つの水流が象徴する衿川区の3つの洞は？",
+        "options": ["독산·시흥·철산동", "가산·독산·시흥동", "독산·신림·가산동"],
+        "options_en": ["Doksan, Siheung, Cheolsan", "Gasan, Doksan, Siheung", "Doksan, Sillim, Gasan"],
+        "options_zh": ["秃山·始兴·铁山洞", "加山·秃山·始兴洞", "秃山·新林·加山洞"],
+        "options_ja": ["禿山・始興・鉄山洞", "加山・禿山・始興洞", "禿山・新林・加山洞"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "spotId": 8,
+    "questions": [
+      {
+        "q": "금천뮤지컬센터는 몇 년에 개관했나요?",
+        "q_en": "In what year did Geumcheon Musical Center open?",
+        "q_zh": "金川音乐剧中心哪年开馆？",
+        "q_ja": "金川ミュージカルセンターは何年に開館しましたか？",
+        "options": ["2019년", "2021년", "2023년"],
+        "options_en": ["2019", "2021", "2023"],
+        "options_zh": ["2019年", "2021年", "2023年"],
+        "options_ja": ["2019年", "2021年", "2023年"],
+        "answer": 1
+      },
+      {
+        "q": "금천뮤지컬센터 공연장의 좌석 수는?",
+        "q_en": "How many seats does the Geumcheon Musical Center theater have?",
+        "q_zh": "金川音乐剧中心演出场有多少座位？",
+        "q_ja": "金川ミュージカルセンターホールの席数は？",
+        "options": ["97석", "197석", "297석"],
+        "options_en": ["97 seats", "197 seats", "297 seats"],
+        "options_zh": ["97座", "197座", "297座"],
+        "options_ja": ["97席", "197席", "297席"],
+        "answer": 1
+      },
+      {
+        "q": "금천뮤지컬센터의 국내 위상은?",
+        "q_en": "What is the national status of Geumcheon Musical Center?",
+        "q_zh": "金川音乐剧中心的国内地位是什么？",
+        "q_ja": "金川ミュージカルセンターの国内での位置づけは？",
+        "options": ["서울 최초 공연장", "국내 유일 뮤지컬 특화 시설", "국내 최대 뮤지컬 센터"],
+        "options_en": ["First theater in Seoul", "Only musical specialty facility in Korea", "Largest musical center in Korea"],
+        "options_zh": ["首尔首个演出场", "国内唯一音乐剧特化设施", "国内最大音乐剧中心"],
+        "options_ja": ["ソウル初の公演場", "韓国唯一のミュージカル特化施設", "韓国最大のミュージカルセンター"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "spotId": 9,
+    "questions": [
+      {
+        "q": "서서울미술관은 서울시립미술관의 몇 번째 분관인가요?",
+        "q_en": "Which branch number of Seoul Museum of Art is the West Seoul Museum?",
+        "q_zh": "西首尔美术馆是首尔市立美术馆第几个分馆？",
+        "q_ja": "西ソウル美術館はソウル市立美術館の何番目の分館ですか？",
+        "options": ["5번째", "7번째", "8번째"],
+        "options_en": ["5th", "7th", "8th"],
+        "options_zh": ["第5个", "第7个", "第8个"],
+        "options_ja": ["5番目", "7番目", "8番目"],
+        "answer": 2
+      },
+      {
+        "q": "서서울미술관 개관 연도는?",
+        "q_en": "In what year did West Seoul Museum of Art open?",
+        "q_zh": "西首尔美术馆哪年开馆？",
+        "q_ja": "西ソウル美術館の開館年は？",
+        "options": ["2024년", "2025년", "2026년"],
+        "options_en": ["2024", "2025", "2026"],
+        "options_zh": ["2024年", "2025年", "2026年"],
+        "options_ja": ["2024年", "2025年", "2026年"],
+        "answer": 2
+      },
+      {
+        "q": "서서울미술관이 특화한 분야는?",
+        "q_en": "What field does West Seoul Museum of Art specialize in?",
+        "q_zh": "西首尔美术馆特化的领域是什么？",
+        "q_ja": "西ソウル美術館が特化している分野は？",
+        "options": ["전통회화", "뉴미디어", "조각·공예"],
+        "options_en": ["Traditional painting", "New media", "Sculpture & craft"],
+        "options_zh": ["传统绘画", "新媒体", "雕塑·工艺"],
+        "options_ja": ["伝統絵画", "ニューメディア", "彫刻・工芸"],
+        "answer": 1
+      }
+    ]
+  }
+]
