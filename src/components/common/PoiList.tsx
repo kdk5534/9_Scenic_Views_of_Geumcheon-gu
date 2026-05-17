@@ -60,7 +60,9 @@ export default function PoiList({ spotId, spotLat, spotLng, lang }: Props) {
     : (p.name_ja ?? p.name);
 
   const kakaoMapUrl = (p: PoiItem) =>
-    `https://map.kakao.com/link/search/${encodeURIComponent(p.name)}`;
+    p.type === 'cafe' || p.type === 'restaurant' || p.type === 'convenience'
+      ? `https://map.kakao.com/link/search/${encodeURIComponent(p.name)}`
+      : `https://map.kakao.com/link/map/${encodeURIComponent(p.name)},${p.lat},${p.lng}`;
 
   return (
     <section className="mb-10">

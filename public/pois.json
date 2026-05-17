@@ -22,8 +22,7 @@
   ],
   "5": [
     { "name": "GS25 에이스가산포휴점", "name_en": "GS25 Ace Gasan Porhu", "name_zh": "GS25 王牌加山店", "name_ja": "GS25 エース加山ポフュ店", "type": "convenience", "lat": 37.482700, "lng": 126.883200 },
-    { "name": "가산디지털단지역 1·7호선", "name_en": "Gasan Digital Complex Stn (Line 1·7)", "name_zh": "加山数码团地站 1·7号线", "name_ja": "加山デジタル団地駅 1・7号線", "type": "transport", "lat": 37.481800, "lng": 126.882400 },
-    { "name": "순이의집 인근 식당가", "name_en": "Restaurant Row near Sooni's House", "name_zh": "顺伊之家附近餐厅街", "name_ja": "スニの家近くの飲食店街", "type": "restaurant", "lat": 37.483000, "lng": 126.884000 }
+    { "name": "가산디지털단지역 1·7호선", "name_en": "Gasan Digital Complex Stn (Line 1·7)", "name_zh": "加山数码团地站 1·7号线", "name_ja": "加山デジタル団地駅 1・7号線", "type": "transport", "lat": 37.481800, "lng": 126.882400 }
   ],
   "6": [
     { "name": "시흥행궁 인근 주차장", "name_en": "Siheung Haenggung Parking", "name_zh": "始兴行宫附近停车场", "name_ja": "始興行宮 近隣駐車場", "type": "parking", "lat": 37.451000, "lng": 126.907800 },
