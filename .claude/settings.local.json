@@ -5,7 +5,17 @@
       "Bash(npx tsc *)",
       "Bash(node -e ' *)",
       "Bash(Get-ChildItem \"C:\\\\Users\\\\Kwon dong geun\\\\9_Scenic_Views_of_Geumcheon-gu\\\\public\")",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "WebSearch",
+      "WebFetch(domain:localmap.co.kr)",
+      "WebFetch(domain:www.bizno.net)",
+      "WebFetch(domain:namu.wiki)",
+      "WebFetch(domain:weseb.com)",
+      "WebFetch(domain:www.tiendeo.co.kr)",
+      "WebFetch(domain:pervsi.com)",
+      "WebFetch(domain:geocode.gimi9.com)",
+      "WebFetch(domain:dorojuso.kr)",
+      "WebFetch(domain:www.esquirekorea.co.kr)"
     ]
   }
 }
