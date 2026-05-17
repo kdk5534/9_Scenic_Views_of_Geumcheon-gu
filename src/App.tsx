@@ -19,7 +19,6 @@ import Header from '@/components/layout/Header';
 import BottomNav from '@/components/layout/BottomNav';
 import AppFooter from '@/components/layout/AppFooter';
 import FaqWidget from '@/components/common/FaqWidget';
-import InstallBanner from '@/components/common/InstallBanner';
 import AuthModal from '@/components/auth/AuthModal';
 import DemoModal from '@/components/common/DemoModal';
 
@@ -273,7 +272,6 @@ export default function App() {
       })()}
 
       <FaqWidget lang={lang} />
-      <InstallBanner lang={lang} />
 
       <DemoModal
         open={showDemoModal}
